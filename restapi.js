@@ -3,7 +3,7 @@ const server = express();
 const cors = require("cors")
 const arr = []
 
-server.use("cors")
+server.use(cors())
 server.use(express.json())
 server.get("/", function(req,res){
 
