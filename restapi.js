@@ -6,7 +6,7 @@ const arr = []
 server.use("cors")
 server.use(express.json())
 server.get("/", function(req,res){
-    res.send("helo world")
+
     res.json(arr)
 })
 
