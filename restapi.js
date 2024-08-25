@@ -1,8 +1,9 @@
 const express = require("express");
 const server = express();
+const cors = require("cors")
 const arr = []
 
-
+server.use("cors")
 server.use(express.json())
 server.get("/", function(req,res){
     res.json(arr)
